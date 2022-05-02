@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HuaShan 1914 Creative park</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="/Assets/Image/huashan.JPG" rotation="0 -130 0"></a-sky>
+
+      <!-- music -->
+      <a-entity
+        id="river"
+        geometry="primitive: plane"
+        material="color: blue"
+        position="-10 0 0"
+        sound="src: /Assets/music/jazzPiano.mp3; autoplay: true"
+      ></a-entity>
+
+      <!-- text -->
+      <a-text
+        font="kelsonsans"
+        value="HuaShan 1914 Creative park"
+        width="6"
+        position="-2.5 0.25 -1.5"
+        rotation="0 15 0"
+      ></a-text>
+    </a-scene>
+  </body>
+</html>
